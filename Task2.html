@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Pen-specific styles */
+ * {
+  box-sizing: border-box;
+} 
+html, body, section {
+  height: 100%;
+}
+
+h1 {
+ overflow: hidden;
+}
+
+h1:after {
+ 
+ background-color: blue;
+ content: "";
+ display: inline-block;
+ height: 5px;
+ position: relative;
+ vertical-align: middle;
+ width: 65%;
+ left: 0.5em;
+ margin-right: -50%;
+}
+/*h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}*/
+.center
+{
+  text-align: center;
+}
+body { 
+ 
+  font-family: sans-serif;
+  text-shadow: 0 2px 2px #b6701e;
+   height: 600px;
+  width: 595px;
+  margin-left: auto;         /* to centre page on screen*/
+  margin-right: auto;
+
+}
+
+.bold
+{
+  font-weight: bold;
+}
+.size
+{
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+.left-half {
+
+  float: left;
+  width: 50%;
+}
+.right-half {
+
+  float: left;
+  width: 50%;
+}
+.circles{
+  display:inline-block; 
+  
+}
+
+.skills{
+  text-align: center;
+  font-style: bold;
+  font-size: 20px; 
+  color:black;
+  margin:0 0 15px 0; 
+}
+
+.circle{
+  position:relative; 
+  display:inline-block;
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  list-style:none;
+  border:2px solid ;
+  overflow:hidden;
+  color: blue;
+
+}
+
+.circle.full:before{
+  content:'';
+  display:inline-block;
+  background:blue;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  vertical-align:top;
+}
+
+.circle.half:before{  
+  content:'';
+  display:inline-block;
+  background:blue;
+  width:100%;
+  height:100%;
+  margin-left:-50%;
+  vertical-align:top;
+}
+
+
+
+.circle:after{
+  content:'';
+  position:absolute; 
+  top:0;
+  left:0;
+  width:calc(100% - 4px);
+  height:calc(100% - 4px);
+  border:2px solid #fff;
+  border-radius:50%;
+}
+
+
+
+
+.SW {
+  margin: 0 0 20px 0;
+  padding: 0 0 5px 0;
+  
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+
+.horizontal .progress-bar {
+  
+  float: left;
+  height: 45px;
+  width: 60%;
+ 
+}
+
+.horizontal .progress-track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #ebebeb;
+}
+
+.horizontal .progress-fill {
+  position: relative;
+  background: blue;
+  height: 20px;
+  width: 70%;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.horizontal .progress-fill2 {
+  position: relative;
+  background: blue;
+  height: 20px;
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.rounded .progress-track,
+.rounded .progress-fill {
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+
+.padding
+{
+  padding-left: 2em;
+}
+.blue
+{
+  color: blue;
+}
+
+
+</style>
+</head>
+<section class="container">
+  <div class="left-half">
+   <p class="center blue"> <i class="fa fa-circle" style="font-size:100px;"></i></p>
+   <div class="center"> <span>YOUSRA </span></br>
+    <span class="bold"> DESOUKEY</span> </br>
+    <span class="size"> Computer Engineer</span> </br> </div> </br> </br>
+    <h1 class="blue"> <i class="fa fa-user-circle-o" style="font-size:20px;"></i> PROFILE</h1>
+   <p class="size"> A personal profile statement is a vital part of your CV, and it is a short statement outlining your personal characteristics. It tells the reader what kind of a person you are, the attributes and qualities that you possess and the experience you have. </p>
+    <h1 class="blue"> <i class="fa fa-phone-square" style="font-size:20px;"></i> CONTACT</h1>
+   <span class="blue">ADDRESS  </span> <span>  Nasr City  </span> </br>
+   <span class="blue">EMAIL  </span> <span>  yousradesoukey@hotmail.com  </span> </br>
+   <span class="blue">PHONE  </span> <span>  01008022028  </span> </br>
+   <span class="blue">WEBSITE  </span> <span>  yousradesoukey.com  </span> </br> </br>
+     <h1 class="blue"> <i class="fa fa-lightbulb-o" style="font-size:20px;"></i> SKILLS</h1>
+     <div>
+  <p class="skills">Creative</p> 
+<ul class="circles rate">
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle half"></li>
+  <li class="circle "></li>
+  <li class="circle "></li>
+  <li class="circle "></li>
+</ul>
+ <p class="skills">Teamwork</p> 
+<ul class="circles rate">
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle "></li>
+  <li class="circle "></li>
+</ul>
+ <p class="skills">Innovative</p> 
+<ul class="circles rate">
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle half"></li>
+  <li class="circle "></li>
+  <li class="circle "></li>
+</ul>
+ <p class="skills">Communication</p> 
+<ul class="circles rate">
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full "></li>
+  <li class="circle full"></li>
+  <li class="circle full "></li>
+  <li class="circle half"></li>
+  <li class="circle "></li>
+</ul>
+</div>
+</div>
+  <div class="right-half padding">
+    <h1 class="blue"> <i class="fa fa-star" style="font-size:20px;"></i> EDUCATION</h1>
+    <p> <i class="fa fa-circle" style="font-size:10px;"></i> <span class="blue"> Bachelor </span> </p>
+    <p> Faculty of Engineering, Ain Shams University </p>
+    <p> <i class="fa fa-circle" style="font-size:10px;"></i> <span class="blue"> School </span></p>
+    <p> St. Fatima School </p>
+    </br> 
+    <h1  class="blue"> <i class="fa fa-suitcase" style="font-size:20px;"></i> EXPERIENCE</h1>
+    <p> <i class="fa fa-circle" style="font-size:10px;"></i> COMPANY NAME</p>
+    <p>Your Job Here </p>
+    <p> <i class="fa fa-circle" style="font-size:10px;"></i> COMPANY NAME</p>
+    <p>Your Job Here</p>
+     <p> <i class="fa fa-circle" style="font-size:10px;"></i> COMPANY NAME</p>
+    <p> Your Job Here</p>
+    
+    </br> </br> </br>
+    <h1  class="blue"> <i class="fa fa-laptop" style="font-size:20px;"></i> SOFTWARE</h1>
+     <div class="left-half">
+    <div class="container horizontal rounded">
+  <p class="SW">Photoshop</p>
+  <div class="progress-bar horizontal">
+    <div class="progress-track">
+      <div class="progress-fill">
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="container horizontal rounded">
+  <p class="SW">Illustrator</p>
+  <div class="progress-bar horizontal">
+    <div class="progress-track">
+      <div class="progress-fill2">
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="container horizontal rounded">
+  <p class="SW">Indesign</p>
+  <div class="progress-bar horizontal">
+    <div class="progress-track">
+      <div class="progress-fill">
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="right-half">
+  <div class="container horizontal rounded">
+  <p class="SW"> DREAMWEAVER</p>
+  <div class="progress-bar horizontal">
+    <div class="progress-track">
+      <div class="progress-fill2">
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="container horizontal rounded">
+  <p class="SW"> AFTEREFFECTS </p>
+  <div class="progress-bar horizontal">
+    <div class="progress-track">
+      <div class="progress-fill">
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="container horizontal rounded">
+  <p class="SW">HTML&CSS3</p>
+  <div class="progress-bar horizontal">
+    <div class="progress-track">
+      <div class="progress-fill2">
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+<html>
